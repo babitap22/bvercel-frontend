@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -25,9 +26,13 @@ export default function Navbar() {
             <a  href="#skills" className="hover:text-blue-600">
               Skills
             </a>
-            <a href="/all-projects" className="hover:text-blue-600">
+
+            <Link to="/all-projects" className="hover:text-blue-600">
               My Projects
-            </a>
+            </Link>
+            {/* <a href="/all-projects" className="hover:text-blue-600">
+              My Projects
+            </a> */}
             <a href="#contact" className="hover:text-blue-600">
               Contact
             </a>
