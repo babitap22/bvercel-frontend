@@ -123,32 +123,7 @@ export default function AboutMe() {
         </div>
       </div>
 
-      {/* Skills Section */}
-      <div className="mt-16">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
-          My Skills
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              whileHover={{
-                scale: 1.1,
-                boxShadow: "0px 4px 15px rgba(0,0,0,0.2)",
-              }}
-              className="flex flex-col items-center justify-center p-6 bg-black rounded-2xl shadow transition cursor-pointer"
-            >
-              {skill.icon}
-              <p className="mt-3 text-lg font-medium text-gray-700">
-                {skill.name}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+     
     </section>
   );
 }

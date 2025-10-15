@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 import ThankYou from "../components/ThankYou";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroSection />
 
       <AboutMe />
+      <Skills />
       <Experience />
       <Projects />
       <Contact />

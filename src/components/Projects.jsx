@@ -1,31 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Ecommerce from "../Image/ecomarce.jpeg";
+import Blogging from "../Image/blogmanagment.jpeg";
+import TechMapperzCrm from "../Image/techmapperzcrm.jpeg"
 
 export default function Projects() {
   const projects = [
     {
       name: "E-commerce Platform",
-      image: "/projects/ecommerce.png",
+      image: Ecommerce,
       about:
         "An online shopping platform like Flipkart with product listing, cart, and secure checkout.",
       tech: ["React", "Node.js", "MongoDB", "Express.js", "JWT"],
-      link: "https://github.com/babitap22/ecommerce",
+      link: "https://github.com/babitap22/Product-Management-pr4",
     },
     {
       name: "Blogging Website",
-      image: "/projects/blog.png",
+      image: Blogging,
       about:
         "A blogging site with user authentication and CRUD operations for posts.",
       tech: ["Node.js", "Express.js", "MongoDB", "JWT"],
-      link: "https://github.com/babitap22/blogging",
+      link: "https://github.com/babitap22/miniBloggingSite",
     },
     {
       name: "CRM Software",
-      image: "/projects/crm.png",
+      image: TechMapperzCrm,
       about:
         "A CRM tool to manage leads, clients, and tasks efficiently for small businesses.",
       tech: ["React", "Tailwind", "Node.js", "MongoDB"],
-      link: "https://unitycrm.techmapperz.com",
+      link: "https://unitycrm.techmapperz.com/login",
     },
    
   ];
@@ -43,7 +46,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden"
+              className="bg-black rounded-2xl shadow hover:shadow-lg transition overflow-hidden"
             >
               {/* Thumbnail */}
               <img
@@ -57,7 +60,7 @@ export default function Projects() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
                   {project.name}
                 </h3>
-                <p className="text-gray-600 mb-3">{project.about}</p>
+                <p className="text-black mb-3">{project.about}</p>
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-4">

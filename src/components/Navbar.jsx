@@ -22,7 +22,7 @@ export default function Navbar() {
             <a href="#about" className="hover:text-blue-600">
               About Me
             </a>
-            <a href="#skills" className="hover:text-blue-600">
+            <a  href="#skills" className="hover:text-blue-600">
               Skills
             </a>
             <a href="/all-projects" className="hover:text-blue-600">
