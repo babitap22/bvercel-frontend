@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+.hero{
+  background: #14001B;
+background: linear-gradient(90deg, rgba(20, 0, 27, 1) 50%, rgba(127, 19, 132, 1) 100%);
+}
+
+.alter{
+  background: #7F1384;
+background: linear-gradient(90deg, rgba(127, 19, 132, 1) 50%, rgba(20, 0, 27, 1) 100%);
+}
+
+p,
+h1,
+h2, 
+h3,
+h4,
+a {
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: white;
+}
