@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 import {
   FaJsSquare,
   FaReact,
@@ -40,7 +42,7 @@ export default function Skills() {
      },
      {
        name: "Express.js",
-       icon: <SiExpress className="text-gray-700 w-12 h-12" />,
+       icon: <SiExpress className="text-white w-12 h-12" />,
      },
      { name: "HTML5", icon: <FaHtml5 className="text-orange-600 w-12 h-12" /> },
      { name: "CSS3", icon: <FaCss3Alt className="text-blue-600 w-12 h-12" /> },
@@ -97,14 +99,14 @@ export default function Skills() {
    ];
 
   return (
-    <section id="skills" className="alter py-16 bg-gray-50">
+    <section id="skills" className="alter py-16 bg-gray-50 md:">
       {/* Skills Section */}
      {/* Skills Section */}
           <div className="mt-16" >
-            <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+            <h2 className="text-3xl font-bold text-center mb-10 text-white">
               My Skills
             </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-2.5 md:px-0">
               {skills.map((skill, index) => (
                 <motion.div
                   key={index}
@@ -118,7 +120,7 @@ export default function Skills() {
                   className="flex flex-col items-center justify-center p-6 bg-black rounded-2xl shadow transition cursor-pointer"
                 >
                   {skill.icon}
-                  <p className="mt-3 text-lg font-medium text-gray-700">
+                  <p className="mt-3 text-lg font-medium text-white">
                     {skill.name}
                   </p>
                 </motion.div>

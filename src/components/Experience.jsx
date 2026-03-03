@@ -45,7 +45,7 @@ export default function Experience() {
     <section className="alter py-16 bg-white" id="experience">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">
           My Experience
         </h2>
 
@@ -61,16 +61,16 @@ export default function Experience() {
                 <h3 className="text-xl font-semibold text-white">
                   {exp.company} - {exp.designation}
                 </h3>
-                <span className="text-gray-400">{exp.duration}</span>
+                <span className="text-white">{exp.duration}</span>
               </div>
 
               {/* Location */}
-              <p className="text-gray-300 mb-3">
+              <p className="text-white mb-3">
                 📍 <span className="font-medium">{exp.location}</span>
               </p>
 
               {/* About */}
-              <p className="text-gray-200 mb-4">{exp.about}</p>
+              <p className="text-white mb-4">{exp.about}</p>
 
               {/* Skills */}
               <div className="flex flex-wrap gap-2">

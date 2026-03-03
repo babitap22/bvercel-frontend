@@ -44,7 +44,7 @@ export default function Contact() {
     <section className="alter py-16 bg-white" id="contact">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">
           Contact Me
         </h2>
 
@@ -52,17 +52,17 @@ export default function Contact() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
           {/* Left Section - Heading */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h3 className="text-4xl font-bold text-gray-900 mb-6 leading-snug">
+            <h3 className="text-4xl font-bold text-white mb-6 leading-snug">
               Let’s Create Something <br /> Amazing Together 🚀
             </h3>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-white">
               Have an idea, project, or just want to say hi? I’d love to hear
               from you. Fill out the form and let’s connect!
             </p>
 
             <div className="mt-8">
               <h4 className="text-lg font-semibold mb-2">📞 Quick Contact</h4>
-              <div className="flex gap-3 text-md justify-center md:justify-start text-gray-700">
+              <div className="flex gap-3 text-md justify-center md:justify-start text-white">
                 {/* Email */}
                 <a
                   href="mailto:babitapradhanindia@gmail.com"
@@ -160,7 +160,7 @@ export default function Contact() {
 
         {/* Status Message */}
         {status && (
-          <p className="mt-6 text-center text-gray-700 font-medium">{status}</p>
+          <p className="mt-6 text-center text-white font-medium">{status}</p>
         )}
       </div>
     </section>

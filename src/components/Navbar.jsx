@@ -6,24 +6,24 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className= "bg-[#310533]  m-auto left-1/2 -translate-x-1/2 shadow-md fixed top-5 w-[85%] z-50 rounded-4xl">
+    <nav className="bg-[#310533]  m-auto left-1/2 -translate-x-1/2 shadow-md fixed top-5 w-[85%] z-50 rounded-4xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          
+
           <a
             href="/"
             className="text-2xl font-bold text-blue-600 hover:text-blue-400 transition"
           >
-           Babita
+            Babita
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <div className="hidden md:flex space-x-8 text-white font-medium">
             <a href="#about" className="hover:text-blue-600">
               About Me
             </a>
-            <a  href="#skills" className="hover:text-blue-600">
+            <a href="#skills" className="hover:text-blue-600">
               Skills
             </a>
 
@@ -53,18 +53,18 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <div className="px-4 py-2 space-y-2 text-gray-700 font-medium">
-            <a href="#about" className="block hover:text-blue-600">
+        <div className="md:hidden bg-[#382f38] shadow-md rounded-b-3xl">
+          <div className="px-4 py-4 space-y-3 text-white font-medium">
+            <a href="#about" className="block hover:text-blue-400">
               About Me
             </a>
-            <a href="#skills" className="block hover:text-blue-600">
+            <a href="#skills" className="block hover:text-blue-400">
               Skills
             </a>
-            <a href="#projects" className="block hover:text-blue-600">
+            <a href="#projects" className="block hover:text-blue-400">
               My Projects
             </a>
-            <a href="#contact" className="block hover:text-blue-600">
+            <a href="#contact" className="block hover:text-blue-400">
               Contact
             </a>
           </div>

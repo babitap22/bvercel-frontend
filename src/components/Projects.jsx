@@ -37,7 +37,7 @@ export default function Projects() {
     <section className="hero py-16 bg-gray-50" id="projects">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">
           My Projects
         </h2>
 
@@ -57,7 +57,7 @@ export default function Projects() {
 
               {/* Details */}
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                <h3 className="text-xl font-semibold text-white mb-2">
                   {project.name}
                 </h3>
                 <p className="text-black mb-3">{project.about}</p>

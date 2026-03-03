@@ -12,12 +12,12 @@ export default function ThankYou() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-white mb-4">
           Thank You for Visiting!
         </h2>
 
         {/* Subtext */}
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-lg text-white mb-8">
           I truly appreciate you taking the time to explore my work.  
           Your support means a lot. Let’s stay connected and create something extraordinary together! 🚀
         </p>

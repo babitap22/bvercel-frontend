@@ -1,5 +1,9 @@
 import React from "react";
 import Profile from "../Image/profile_image.jpeg";
+import Resume from '../Image/Babita Pradhan.pdf'
+
+
+
 import {
   FaGithub,
   FaLinkedin,
@@ -8,7 +12,6 @@ import {
   FaXTwitter,
   FaDiscord,
   FaFacebook,
-  
 } from "react-icons/fa6"; // Using FontAwesome v6 for X(Twitter)
 import {
   SiLeetcode,
@@ -23,13 +26,13 @@ import { FaArrowDown } from "react-icons/fa"; // Arrow icon
 
 export default function HeroSection() {
   return (
-    <section className="hero w-full pt-20 min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-gray-50">
+    <section className="hero w-full pt-[40px] min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16  text-white">
       {/* Left Section */}
       <div className="flex flex-col justify-center gap-4 md:w-1/2 text-center md:text-left">
         <h2 className="text-2xl font-medium ">👋 Welcome to my world</h2>
         <h1 className="text-4xl font-bold ">Hi, I'm Babita</h1>
         <h3 className="text-xl font-semibold">I am a Software Developer</h3>
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-white leading-relaxed">
           I build responsive and dynamic web applications using modern
           technologies. With a passion for coding and problem-solving, I enjoy
           creating meaningful digital experiences that help businesses and
@@ -39,7 +42,7 @@ export default function HeroSection() {
         {/* Buttons */}
         <div className="flex gap-4 mt-4 justify-center md:justify-start">
           <a
-            href="https://docs.google.com/document/d/1HSWMREZ2dH2IMpOgOAhYiu-Kz9cklRdkX9JtRF3cwsc/edit?tab=t.0"
+            href={Resume}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 bg-indigo-600 text-white rounded-2xl shadow-md hover:bg-indigo-700 transition"
@@ -48,7 +51,7 @@ export default function HeroSection() {
           </a>
           <a
             href="#projects"
-            className="px-6 py-2 bg-indigo-600 text-gray-800 rounded-2xl shadow-md hover:bg-gray-300 transition"
+            className="px-6 py-2 bg-indigo-600 text-white rounded-2xl shadow-md hover:bg-gray-300 transition"
           >
             Projects
           </a>
@@ -58,7 +61,7 @@ export default function HeroSection() {
           {/* Code Media */}
           <div className="mt-8">
             <h4 className="text-lg font-semibold mb-2">💻 Code Media</h4>
-            <div className="flex gap-5 text-2xl justify-center md:justify-start text-gray-700">
+            <div className="flex gap-5 text-2xl justify-center md:justify-start text-white">
               <a
                 href="https://github.com/babitap22"
                 target="_blank"
@@ -100,7 +103,7 @@ export default function HeroSection() {
           {/* Social Media */}
           <div className="mt-8">
             <h4 className="text-lg font-semibold mb-2">🌐 Social Media</h4>
-            <div className="flex gap-5 text-2xl justify-center md:justify-start text-gray-700">
+            <div className="flex gap-5 text-2xl justify-center md:justify-start text-white">
               <a
                 href="https://www.linkedin.com/in/babita-pradhan/"
                 target="_blank"
@@ -141,24 +144,21 @@ export default function HeroSection() {
               </a>
             </div>
           </div>
-
-         
         </div>
       </div>
 
       {/* Right Section - Photo */}
-      <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
+      <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-10 mb-6 md:mb-0">
         <img
           src={Profile}
           alt="Babita"
-          className="w-90 h-90  md:w-96 md:h-96 object-cover rounded-full shadow-lg border-4 border-indigo-500"
+          className="w-40 md:w-96 aspect-square object-cover rounded-full shadow-lg border-4 border-indigo-500"
         />
       </div>
-
       {/* Scroll Down Arrow */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+      <div className="absolute hidden md:block bottom-6 left-1/2 transform -translate-x-1/2 ">
         <a href="#about">
-          <FaArrowDown className="text-3xl text-indigo-600 animate-bounce cursor-pointer hover:text-indigo-800 transition" />
+          <FaArrowDown className=" funarrow text-3xl text-indigo-600 animate-bounce cursor-pointer hover:text-indigo-800 transition " />
         </a>
       </div>
     </section>
